@@ -1,5 +1,5 @@
 [submodule "rcir"]
-	path = rcir
+	path = asd
 	url = https://github.com/elegantcookie/rcir
 [submodule "DCPIR"]
 	path = DCPIR
