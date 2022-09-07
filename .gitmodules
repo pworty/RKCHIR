@@ -1,3 +1,6 @@
 [submodule "rcir"]
 	path = rcir
 	url = https://github.com/elegantcookie/rcir
+[submodule "DCPIR"]
+	path = DCPIR
+	url = https://github.com/Andrew1481432/DCPIR.git
