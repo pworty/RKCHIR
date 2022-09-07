@@ -1,0 +1,3 @@
+[submodule "rcir"]
+	path = rcir
+	url = https://github.com/elegantcookie/rcir
