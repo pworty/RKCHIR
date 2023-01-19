@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    background-color: silver;
+    font-family: 'Roboto', sans-serif;
+}
+
+main,
+footer {
+    margin: 1rem;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+main section ol {
+    float: right;
+}
+
+main section ul {
+    display: inline;
+}
+
+article {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+}
+
+footer {
+    padding-left: 75%;
+    position: fixed;
+    bottom: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: aqua;
+}
+
+a:active {
+    text-shadow: -0.05em -0.05em 0.05em red;
+    position: relative;
+    top: 0.1em;
+    left: 0.1em;
+}
+
+.logo {
+    width: 3.5em;
+    height: 3.5em;
+    margin: 0 1em;
+    border-radius: 30%;
+    align-self: center;
+    background-image: url('fav.png');
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+nav {
+    background-color: slateblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    font-size: 2em;
+}
+
+aside {
+    width: 70%;
+    float: right;
+    color: cadetblue;
+}
+
+a[href^="mailto"] {
+    font-size: 1.2em;
+    display: block;
+}
+
+a[href^="mailto"]::before {
+    content: "📧 ";
+}
+
+a[href^="tel"] {
+    font-size: 1.2em;
+    display: block;
+
+}
+
+a[href^="tel"]::before {
+    content: "📞 ";
+}
+
+.move {
+    font-size: 1.2em;
+}
+
+.move:last-child {
+    position: sticky;
+}

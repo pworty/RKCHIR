@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form action="account.html" method="get" class="panel">
+        <input type="text" name="name" id="name" placeholder="Human name" required>
+        <input type="password" name="password" id="password" placeholder="Code word" required>
+        <input type="email" name="email" id="email" placeholder="Pigeon post" required>
+        <input type="tel" name="phone" id="phone" placeholder="Spiritual phone"
+            pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$">
+
+        <label for="daemon">Daemon picture:</label>
+        <input type="file" name="daemonpic" id="daemonpic" accept="image/*,.pdf">
+        <fieldset>
+            <legend>Soul manipulation</legend>
+            <div class="soul">
+                <input type="checkbox" name="sellsoul" id="sellsoul" checked>
+                <label for="sellsoul">Sell your soul</label>
+            </div>
+            <div class="soulratio">
+                <input type="radio" name="soulratio" id="onehalf" value="onehalf">
+                <label for="onehalf">One half</label>
+                <input type="radio" name="soulratio" id="twothirds" value="twothirds">
+                <label for="twothirds">Two thirds</label>
+                <input type="radio" name="soulratio" id="fully" value="fully" checked>
+                <label for="fully">Fully</label>
+            </div>
+        </fieldset>
+
+        <label for="ritual">Choose a time for your ritual:</label>
+        <input type="datetime-local" name="ritual" id="ritual" value="2022-11-28T14:20" min="2022-11-27T00:00"
+            max="2022-11-29T00:00">
+        <label>Choose your monster:</label>
+        <select name="pets" multiple size="4">
+            <optgroup label="Monster">
+                <option value="kraken">Kraken</option>
+                <option value="sasquatch">Sasquatch</option>
+                <option value="mothman">Mothman</option>
+            </optgroup>
+            <optgroup label="Monster features">
+                <option value="scales">Scales</option>
+                <option value="horns">Horns</option>
+                <option value="fangs">Fangs</option>
+            </optgroup>
+        </select>
+
+
+        <textarea name="textarea" rows="4" cols="30" minlength="10" maxlength="50" placeholder="Your last wishes"
+            required></textarea>
+
+        <button type="reset">Rethink your choices</button>
+
+        <div class="submit">
+            <input type="submit" value="Sacrifice">
+        </div>
+    </form>
+</body>
+
+</html>
